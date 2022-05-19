@@ -1,9 +1,11 @@
-interface Itask {
+interface createTask {
+  titulo:string
   task:string,
-  status:string,
-  date:Date
+  author:string
 }
 
-interface ItaskId extends Itask {
-  id:string
+interface ItaskId extends createTask {
+  id:string,
+  status:string,
+  date:Date
 }
