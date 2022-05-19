@@ -3,7 +3,7 @@ import * as controller from '../../app/controller/task.controller';
 
 const routerTask = Router();
 
-routerTask.get('/', async (req:Request, res:Response) => {
+routerTask.get('/', async (_req:Request, res:Response) => {
   const allTasks = await controller.findAll();
   return res.status(200).json(allTasks);
 });
@@ -14,7 +14,10 @@ routerTask.get('/:id', async (req:Request, res:Response) => {
   return res.status(200).json(task);
 });
 
-routerTask.post('/');
+routerTask.post('/', async (req:Request, res:Response) => {
+  await controller.create(req.body);
+  return res.status(201).end();
+});
 
 routerTask.patch('/:id');
 
