@@ -6,7 +6,6 @@ function NewTask() {
   const navigate = useNavigate();
   const [element, setElement] = useState({
     task: '',
-    title: '',
   });
 
   const change = ({ target }) => {
@@ -27,22 +26,13 @@ function NewTask() {
 
   return (
     <form action="" onSubmit={(e) => submit(e)}>
-      <label htmlFor="title">
-        Titulo
-        <input
-          required
-          value={element.title}
-          name="title"
-          onChange={(e) => change(e)}
-        />
-      </label>
       <label htmlFor="task">
         Task
-        <textarea
+        <input
+          required
+          value={element.task}
           name="task"
-          cols="30"
-          rows="10"
-          placeholder="escreva sua task aqui"
+          onChange={(e) => change(e)}
         />
       </label>
       <button type="submit">enviar</button>
