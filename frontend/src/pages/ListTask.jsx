@@ -48,7 +48,6 @@ function listTask() {
         </select>
       </div>
       <div>
-        <p>{list.length}</p>
         {list.length > 0 && list.map((e, i) => (
           Task({ ...e, index: i })
         ))}

@@ -25,7 +25,7 @@ function NewTask() {
   };
 
   return (
-    <form action="" onSubmit={(e) => submit(e)}>
+    <form onSubmit={(e) => submit(e)}>
       <label htmlFor="task">
         Task
         <input

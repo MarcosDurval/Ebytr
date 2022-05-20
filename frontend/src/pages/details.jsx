@@ -33,7 +33,7 @@ function Details() {
 
   return (
     <div>
-      {task && task.task
+      {task
         && (
         <form onSubmit={(e) => submit(e)}>
           <label htmlFor="task">
