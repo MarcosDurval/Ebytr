@@ -11,3 +11,13 @@ export const findOne = async (id:ItaskId['id']) => {
 };
 
 export const create = async (body:IcreateTask) => models.create(body);
+
+export const update = async (id:ItaskId['id'], body:ItaskId) => {
+  const task = await models.findOne(id);
+  if (!task) {
+    throw new Error('404/task not found');
+  }
+  await models.update(id, body);
+};
+
+export const destroy = async (id:ItaskId['id']) => models.destroy(id);
