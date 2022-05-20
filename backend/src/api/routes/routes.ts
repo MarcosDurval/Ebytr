@@ -19,6 +19,12 @@ routerTask.post('/', async (req:Request, res:Response) => {
   return res.status(201).end();
 });
 
-routerTask.patch('/:id');
+routerTask.put('/:id', async (req:Request, res:Response) => {
+  const { id } = req.params;
+  await controller.update(id, req.body);
+  return res.status(200).end();
+});
+
+routerTask.delete('/:id');
 
 export default routerTask;
