@@ -1,7 +1,5 @@
 # Ebytr
 
-## Tecnologias
-
 # como executar localmente
 
 dentro do arquivo banckend execute o comando docker-compose up -d para criar um banco local,
