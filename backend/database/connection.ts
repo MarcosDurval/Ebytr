@@ -1,6 +1,7 @@
 import mongoose from 'mongoose';
+import 'dotenv/config';
 
-const db = process.env.URI || 'mongodb://localhost:27017/Ebytr';
+const db = process.env.URI || '';
 
 const connect = async () => {
   mongoose.connect(db);

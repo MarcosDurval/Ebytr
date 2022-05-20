@@ -9,3 +9,7 @@ export const create = async (body:IcreateTask) => {
   await isValidTask(body);
   return service.create(body);
 };
+
+export const update = async (id:ItaskId['id'], body:ItaskId) => service.update(id, body);
+
+export const destroy = async (id:ItaskId['id']) => service.destroy(id);
