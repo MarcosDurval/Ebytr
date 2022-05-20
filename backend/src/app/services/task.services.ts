@@ -17,7 +17,7 @@ export const update = async (id:ItaskId['id'], body:ItaskId) => {
   if (!task) {
     throw new Error('404/task not found');
   }
-  models.update(id, body);
+  await models.update(id, body);
 };
 
 export const destroy = async (id:ItaskId['id']) => models.destroy(id);
