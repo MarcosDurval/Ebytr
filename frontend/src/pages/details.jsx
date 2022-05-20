@@ -33,9 +33,9 @@ function Details() {
 
   return (
     <div>
-      {task
+      {task && task.task
         && (
-        <form action="" onSubmit={(e) => submit(e)}>
+        <form onSubmit={(e) => submit(e)}>
           <label htmlFor="task">
             <input
               required
