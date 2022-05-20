@@ -1,4 +1,8 @@
 const url = 'http://localhost:3001/task';
+const headers = {
+  Accept: 'application/json',
+  'Content-Type': ' application/json',
+};
 
 export const getAllTasks = async () => {
   const result = await fetch(url);
@@ -13,7 +17,8 @@ export const getById = async (id) => {
 export const create = async (body) => {
   const result = await fetch(url, {
     method: 'POST',
-    body,
+    headers,
+    body: JSON.stringify(body),
   });
   return result;
 };
