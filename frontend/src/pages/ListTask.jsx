@@ -5,6 +5,7 @@ import * as fetchApi from '../help/fetchApi';
 
 function listTask() {
   const [list, setList] = useState([]);
+
   useEffect(() => {
     fetchApi.getAllTasks().then(setList);
   }, []);
@@ -22,8 +23,8 @@ function listTask() {
         </select>
       </div>
       <div>
-        {list.map((e) => (
-          Task(e)
+        {list.length > 0 && list.map((e, i) => (
+          Task({ ...e, index: i })
         ))}
       </div>
     </div>
