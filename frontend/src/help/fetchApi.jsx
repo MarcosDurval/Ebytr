@@ -22,3 +22,20 @@ export const create = async (body) => {
   });
   return result;
 };
+
+export const update = async (id, body) => {
+  const result = await fetch(`${url}/${id}`, {
+    method: 'PUT',
+    headers,
+    body: JSON.stringify(body),
+  });
+  return result;
+};
+
+export const destroy = async (id) => {
+  const result = await fetch(`${url}/${id}`, {
+    method: 'DELETE',
+    headers,
+  });
+  return result;
+};
