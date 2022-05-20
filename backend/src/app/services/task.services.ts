@@ -19,3 +19,5 @@ export const update = async (id:ItaskId['id'], body:ItaskId) => {
   }
   models.update(id, body);
 };
+
+export const destroy = async (id:ItaskId['id']) => models.destroy(id);

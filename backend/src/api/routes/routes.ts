@@ -25,6 +25,10 @@ routerTask.put('/:id', async (req:Request, res:Response) => {
   return res.status(200).end();
 });
 
-routerTask.delete('/:id');
+routerTask.delete('/:id', async (req:Request, res:Response) => {
+  const { id } = req.params;
+  await controller.destroy(id);
+  return res.status(200).end();
+});
 
 export default routerTask;

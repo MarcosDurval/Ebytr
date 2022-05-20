@@ -11,3 +11,5 @@ export const create = async (body:IcreateTask) => {
 };
 
 export const update = async (id:ItaskId['id'], body:ItaskId) => service.update(id, body);
+
+export const destroy = async (id:ItaskId['id']) => service.destroy(id);
