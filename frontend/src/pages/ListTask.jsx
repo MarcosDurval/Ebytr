@@ -1,4 +1,3 @@
-/* eslint-disable no-case-declarations */
 import React from 'react';
 
 function listTask({ list, setList }) {
