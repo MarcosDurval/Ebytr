@@ -20,7 +20,7 @@ export default function NewTask({ dataTask, setTask, setList }) {
 
   const edit = async (e) => {
     e.preventDefault();
-    await fetchApi.update(_id, dataTask);
+    await fetchApi.update(_id, { task });
     setTask({ task: '' });
     fetchApi.getAllTasks().then(setList);
   };
