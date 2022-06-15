@@ -10,5 +10,6 @@ docker-compose up -d
 ```
 
 ### Parando a execução
-
+```
 docker-compose down --remove-orphans
+```
