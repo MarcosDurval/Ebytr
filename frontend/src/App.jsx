@@ -1,15 +1,11 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import List from './pages/ListTask';
-import NewTask from './pages/newTask';
-import Details from './pages/details';
+import Page from './pages/prin';
 
 function App() {
   return (
     <Routes>
-      <Route path="/" element={<List />} />
-      <Route path="/create" element={<NewTask />} />
-      <Route path=":id" element={<Details />} />
+      <Route path="/" element={<Page />} />
     </Routes>
   );
 }

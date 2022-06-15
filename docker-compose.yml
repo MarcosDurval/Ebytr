@@ -1,0 +1,29 @@
+version: '3.9'
+services: 
+
+  frontend:
+    build: ./frontend
+    ports:
+      - 3000:80
+    volumes:
+      - ./frontend:/usr/frontend
+    depends_on:
+      - backend
+
+  backend:
+    container_name: backend
+    build: ./backend
+    volumes:
+      - ./backend:/usr/backend
+    ports:
+      - 3001:3001
+    depends_on:
+      - mongodb
+
+  mongodb:
+    container_name: mongodb
+    image: mongo:4.4-focal
+    restart: always
+   
+    ports:
+      - 27017:27017
