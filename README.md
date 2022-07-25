@@ -1,14 +1,19 @@
 # Ebytr
-O Etrybr é um todo list onde é possivel realizar as ações do CRUD
+O Etrybr é uma lista de tarefas onde é possivel realizar as ações do CRUD
 
 
+## Desensolvimento:
+### Tecnologias utilizadas no back-end:
+Typescript, express, chai, mocha, mongoose
 
+### Tecnologias utilizadas no front-end:
+React
 # Como executar localmente
 
 ### Inicializando o APP
 execute:
 ```
-docker-compose up -d
+docker-compose up --build -d
 ```
 ### Rode os testes do backend:
 ```
