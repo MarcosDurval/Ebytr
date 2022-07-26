@@ -1,5 +1,5 @@
 # Ebytr
-O Etrybr é uma lista de tarefas onde é possivel realizar as ações do CRUD
+O Etrybr é um aplicativo de lista de tarefas onde é possivel realizar as ações do CRUD
 
 
 ## Desensolvimento:
