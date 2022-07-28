@@ -11,17 +11,18 @@ React
 # Como executar localmente
 
 ### Inicializando o APP
-execute:
+no mesmo diretório que está o docker-compose execute:
 ```
 docker-compose up --build -d
 ```
 ### Rode os testes do backend:
+
 ```
 docker exec -it backend npm run test
 ```
 
 ### Parando a execução
-execute:
+no mesmo diretório que está o docker-compose execute:
 ```
 docker-compose down --remove-orphans
 ```
