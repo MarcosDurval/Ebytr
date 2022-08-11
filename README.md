@@ -1,6 +1,7 @@
 # Ebytr
 O Etrybr é um aplicativo de lista de tarefas onde é possivel realizar as ações do CRUD
 
+<img src="./front.png"/>
 
 ## Desensolvimento:
 ### Tecnologias utilizadas no back-end:
@@ -10,6 +11,7 @@ Typescript, express, chai, mocha, mongoose
 React
 # Como executar localmente
 
+crie um .env no diretorio backend e siga o .env.example
 ### Inicializando o APP
 no mesmo diretório que está o docker-compose execute:
 ```
@@ -24,5 +26,5 @@ docker exec -it backend npm run test
 ### Parando a execução
 no mesmo diretório que está o docker-compose execute:
 ```
-docker-compose down --remove-orphans
+docker-compose down -v --remove-orphans
 ```

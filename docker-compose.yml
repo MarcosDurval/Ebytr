@@ -14,8 +14,8 @@ services:
   backend:
     container_name: backend
     build: ./backend
-    volumes:
-      - ./backend:/usr/backend
+    # volumes:
+    #   - ./backend:/usr/backend
     ports:
       - 3001:3001
     depends_on:
