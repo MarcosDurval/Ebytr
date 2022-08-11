@@ -11,7 +11,7 @@ Typescript, express, chai, mocha, mongoose
 React
 # Como executar localmente
 
-crie um .env no diretorio backend e siga o .env.example
+crie um arquivo .env no diretorio backend e siga o exemplo do .env.example
 ### Inicializando o APP
 no mesmo diretório que está o docker-compose execute:
 ```
