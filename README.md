@@ -25,7 +25,7 @@ docker-compose up --build -d
 ### Rode os testes do backend:
 
 ```
-docker-compose exec -it backend npm run test
+docker exec -it backend npm run test
 ```
 
 ### Parando a execução
