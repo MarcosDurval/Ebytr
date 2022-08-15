@@ -14,8 +14,9 @@ services:
   backend:
     container_name: backend
     build: ./backend
-    # volumes:
-    #   - ./backend:/usr/backend
+    environment:
+      - URI=mongodb://mongodb:27017/Ebytr
+      - PORT=3001
     ports:
       - 3001:3001
     depends_on:

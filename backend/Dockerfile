@@ -4,7 +4,7 @@ WORKDIR /usr/backend
 
 COPY package*.json ./
 
-RUN npm install --location=global npm@latest
+RUN npm install --silent
 
 COPY . .
 

@@ -9,22 +9,26 @@ Typescript, express, chai, mocha, mongoose
 
 ### Tecnologias utilizadas no front-end:
 React
-# Como executar localmente
+# Como executar localmente:
 
-crie um arquivo .env no diretório backend e siga o exemplo do .env.example
+```
+git clone git@github.com:MarcosDurval/Ebytr.git
+```
 ### Inicializando o APP
-no mesmo diretório que está o docker-compose execute:
+
+```
+cd Ebytr
+```
 ```
 docker-compose up --build -d
 ```
 ### Rode os testes do backend:
 
 ```
-docker exec -it backend npm run test
+docker-compose exec -it backend npm run test
 ```
 
 ### Parando a execução
-no mesmo diretório que está o docker-compose execute:
 ```
-docker-compose down -v --remove-orphans
+docker-compose down --remove-orphans
 ```
